@@ -1,11 +1,19 @@
 <html>
     <head>
-        <title>Tofu's blog</title>
+        <title>Tofu blog</title>
     </head>
     <body>
-      <h1>Tofu blogs</h1>
-      <h2>This is where we make money</h2>
-        <p>Hi there!</p>
-        <p><em>?It works!</em></p>
+        <div>
+            <h1><a href="/">TOFU BLOG</a></h1>
+        </div>
+
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+
     </body>
 </html>
