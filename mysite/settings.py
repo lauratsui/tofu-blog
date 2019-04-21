@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'lv3x--x^2mt_nspzl1m8cs+1(jrt!pwh2r6gbl_c)sm42x*r$8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -70,7 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-    
+
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
